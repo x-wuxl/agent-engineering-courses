@@ -219,8 +219,23 @@ function renderSidebar() {
   list.innerHTML = html;
 }
 
+function resolveArticleDir(file) {
+  const slash = file.lastIndexOf('/');
+  return slash >= 0 ? file.slice(0, slash + 1) : '';
+}
+
+function fixImageSrcs(container, baseDir) {
+  container.querySelectorAll('img').forEach(img => {
+    const src = img.getAttribute('src') || '';
+    if (src && !/^[a-z]+:/i.test(src) && !src.startsWith('/') && !src.startsWith('#') && !src.startsWith('data:')) {
+      img.src = encodeURI(baseDir + src);
+    }
+  });
+}
+
 function openArticle(file) {
   const decoded = decodeURIComponent(file);
+  const baseDir = resolveArticleDir(decoded);
   document.getElementById('sidebar').classList.remove('open');
   document.getElementById('landing').style.display = 'none';
   
@@ -234,6 +249,7 @@ function openArticle(file) {
   fetch(decoded).then(r => r.text()).then(md => {
     const html = marked.parse(md);
     container.innerHTML = '<div class="article-content active">' + html + '</div>';
+    fixImageSrcs(container, baseDir);
     container.querySelectorAll('pre code').forEach(block => {
       hljs.highlightElement(block);
     });
