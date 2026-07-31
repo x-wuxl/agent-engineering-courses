@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>从0开始构建 Agent Harness</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<style>
+:root {
+  --bg: #0f1117;
+  --bg-card: #1a1c25;
+  --bg-hover: #22252f;
+  --border: #2a2d3a;
+  --text: #e1e4eb;
+  --text-secondary: #8b8fa3;
+  --accent: #7c6ff0;
+  --accent-light: #a99bff;
+  --green: #50d890;
+  --width-sidebar: 320px;
+  --header-h: 60px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Noto Sans SC', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  overflow: hidden;
+  height: 100vh;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+.header {
+  position: fixed; top: 0; left: 0; right: 0; height: var(--header-h);
+  background: var(--bg); border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; padding: 0 20px; z-index: 100;
+  gap: 12px;
+}
+.header h1 {
+  font-size: 16px; font-weight: 600;
+  background: linear-gradient(135deg, var(--accent-light), var(--green));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.menu-btn { display: none; background: none; border: none; color: var(--text); font-size: 22px; cursor: pointer; padding: 4px; }
+
+.container { display: flex; height: 100vh; padding-top: var(--header-h); }
+
+.sidebar {
+  width: var(--width-sidebar); min-width: var(--width-sidebar);
+  background: var(--bg-card); border-right: 1px solid var(--border);
+  overflow-y: auto; padding: 12px 0;
+  transition: transform 0.3s ease;
+}
+.sidebar-chapter {
+  padding: 8px 16px; font-size: 11px; font-weight: 600;
+  color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px;
+  margin-top: 8px;
+}
+.sidebar-item {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 16px 8px 20px;
+  cursor: pointer; font-size: 13px; color: var(--text-secondary);
+  transition: all 0.15s; border-left: 3px solid transparent;
+  text-decoration: none;
+}
+.sidebar-item:hover { background: var(--bg-hover); color: var(--text); }
+.sidebar-item.active {
+  color: var(--accent-light); background: rgba(124,111,240,0.08);
+  border-left-color: var(--accent);
+}
+.sidebar-order {
+  font-size: 11px; color: var(--text-secondary); opacity: 0.5;
+  min-width: 20px; font-family: 'JetBrains Mono', monospace;
+}
+
+.main {
+  flex: 1; overflow-y: auto; padding: 40px 48px;
+  max-width: 860px; margin: 0 auto;
+}
+.article-content { display: none; }
+.article-content.active { display: block; }
+
+.article-content h1 {
+  font-size: 26px; font-weight: 700; margin-bottom: 16px;
+  line-height: 1.4; color: var(--text);
+}
+.article-content h2 {
+  font-size: 20px; font-weight: 600; margin: 32px 0 12px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+.article-content h3 { font-size: 17px; font-weight: 600; margin: 28px 0 10px; color: var(--text); }
+.article-content p { margin-bottom: 16px; font-size: 15px; color: var(--text-secondary); }
+.article-content ul, .article-content ol { margin: 8px 0 16px 24px; color: var(--text-secondary); }
+.article-content li { margin-bottom: 6px; }
+.article-content blockquote {
+  border-left: 4px solid var(--accent); background: rgba(124,111,240,0.06);
+  margin: 16px 0; padding: 12px 20px; border-radius: 0 8px 8px 0;
+  color: var(--text-secondary); font-style: italic;
+}
+.article-content code {
+  font-family: 'JetBrains Mono', monospace; font-size: 13px;
+  background: rgba(255,255,255,0.06); padding: 2px 6px;
+  border-radius: 4px; color: var(--accent-light);
+}
+.article-content pre {
+  background: #151720; border: 1px solid var(--border);
+  border-radius: 8px; padding: 16px 20px; margin: 16px 0;
+  overflow-x: auto;
+}
+.article-content pre code { background: none; padding: 0; color: inherit; }
+.article-content img { max-width: 100%; border-radius: 8px; margin: 16px 0; }
+.article-content a { color: var(--accent-light); text-decoration: none; }
+.article-content a:hover { text-decoration: underline; }
+.article-content hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+.article-content table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px;
+}
+.article-content th, .article-content td {
+  border: 1px solid var(--border); padding: 8px 12px;
+  text-align: left;
+}
+.article-content th { background: var(--bg-card); font-weight: 600; color: var(--text); }
+.article-content td { color: var(--text-secondary); }
+
+.landing {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; height: 60vh; text-align: center;
+}
+.landing h2 { font-size: 28px; font-weight: 700; margin-bottom: 12px;
+  background: linear-gradient(135deg, var(--accent-light), var(--green));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.landing p { color: var(--text-secondary); font-size: 15px; max-width: 400px; }
+
+@media (max-width: 768px) {
+  .menu-btn { display: block; }
+  .sidebar {
+    position: fixed; top: var(--header-h); left: 0; bottom: 0;
+    transform: translateX(-100%); z-index: 90;
+  }
+  .sidebar.open { transform: translateX(0); }
+  .main { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+  <h1>从 0 开始构建 Agent Harness</h1>
+</div>
+
+<div class="container">
+  <nav class="sidebar" id="sidebar">
+    <div id="sidebar-list"></div>
+  </nav>
+  <main class="main" id="main-content">
+    <div class="landing" id="landing">
+      <h2>从 0 开始构建 Agent Harness</h2>
+      <p>选择左侧文章开始阅读</p>
+    </div>
+    <div id="article-container"></div>
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>
+marked.setOptions({
+  breaks: true,
+  gfm: true,
+  highlight: function(code, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try { return hljs.highlight(code, { language: lang }).value; } catch (e) {}
+    }
+    return code;
+  }
+});
+
+let articles = [];
+
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+}
+
+function loadArticles() {
+  fetch('articles.json').then(r => r.json()).then(data => {
+    articles = data;
+    renderSidebar();
+    if (location.hash) {
+      openArticle(decodeURIComponent(location.hash.slice(1)));
+    }
+  });
+}
+
+function renderSidebar() {
+  const list = document.getElementById('sidebar-list');
+  let currentChapter = '';
+  let html = '';
+  articles.forEach(a => {
+    if (a.chapter !== currentChapter) {
+      currentChapter = a.chapter;
+      html += `<div class="sidebar-chapter">${a.chapter}</div>`;
+    }
+    const encoded = encodeURIComponent(a.file);
+    const isActive = location.hash === '#' + encoded;
+    const orderStr = a.order < 100 ? (a.order > 0 ? (a.order < 10 ? '0' + a.order : '' + a.order) : '00') : '--';
+    html += `<a class="sidebar-item${isActive ? ' active' : ''}" href="#${encoded}" data-file="${a.file}">
+      <span class="sidebar-order">${orderStr}</span>
+      <span>${a.title.replace(/^\d+\s*[｜|]\s*/, '')}</span>
+    </a>`;
+  });
+  list.innerHTML = html;
+}
+
+function openArticle(file) {
+  const decoded = decodeURIComponent(file);
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('landing').style.display = 'none';
+  
+  document.querySelectorAll('.sidebar-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.file === decoded);
+  });
+  
+  const container = document.getElementById('article-container');
+  container.innerHTML = '<p style="text-align:center;padding:60px;color:var(--text-secondary)">加载中...</p>';
+  
+  fetch(decoded).then(r => r.text()).then(md => {
+    const html = marked.parse(md);
+    container.innerHTML = '<div class="article-content active">' + html + '</div>';
+    container.querySelectorAll('pre code').forEach(block => {
+      hljs.highlightElement(block);
+    });
+    document.querySelector('.main').scrollTop = 0;
+  }).catch(() => {
+    container.innerHTML = '<p style="text-align:center;padding:60px;color:var(--text-secondary)">加载失败</p>';
+  });
+}
+
+window.addEventListener('hashchange', () => {
+  if (location.hash) {
+    openArticle(decodeURIComponent(location.hash.slice(1)));
+  }
+});
+
+loadArticles();
+</script>
+</body>
+</html>
