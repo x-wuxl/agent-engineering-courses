@@ -47,8 +47,8 @@ log.Printf("耗时: %v, 花费: %f", time.Since(start), cost)
 
 在驾驭工程中，我们追求的是对上层业务的绝对透明。我们必须在**模型适配器（Provider Adapter）的极低层**进行拦截。我们用一张示意图来展示这种基于“拦截器模式”的无侵入式成本追踪架构：
 
-![图片](_assets/981027_img_001.png)  
-![图片](_assets/981027_img_002.png)
+![图片](assets/981027_img_001.png)  
+![图片](assets/981027_img_002.png)
 
 通过这种**装饰器模式（Decorator）**，`Main Loop` 根本不知道自己被“监控”了，它依然像以前一样发起调用。而所有的 Token 和耗时数据，都在 `Tracker` 中被截获并记录。
 

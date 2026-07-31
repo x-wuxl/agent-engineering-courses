@@ -134,7 +134,7 @@
 👉 **好课推荐**：[《AI原生开发工作流实战》](http://gk.link/a/12IZI)**Tony Bai 出品，已完结**  
 ——Claude Code + SDD，打造你的自动化 AI 工作流
 
-![](_assets/972842_img_001.jpg)
+![](assets/972842_img_001.jpg)
 
 ---
 

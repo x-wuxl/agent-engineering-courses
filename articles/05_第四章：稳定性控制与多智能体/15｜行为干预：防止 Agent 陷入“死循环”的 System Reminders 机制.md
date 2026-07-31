@@ -41,7 +41,7 @@
 
 这就是 System Reminders（运行时提醒）的原理。我们可以通过一张图来对比一下传统的做法和 System Reminders 的差异：
 
-![图片](_assets/979401_img_001.png)
+![图片](assets/979401_img_001.png)
 
 通过这套机制，我们的 Harness 引擎从一个“被动的状态机”变成了一个具有监督能力的“主动导师”。
 

@@ -47,7 +47,7 @@ if engine.ModelType == "claude" {
 
 我们可以用一张示意图来展示这种解耦架构：
 
-![图片](_assets/967860_img_001.png)  
+![图片](assets/967860_img_001.png)  
 通过这层抽象，我们的微型 OS 具备了“即插即用”换大脑的能力。
 
 ## 代码实战：实现双协议 Provider 适配器

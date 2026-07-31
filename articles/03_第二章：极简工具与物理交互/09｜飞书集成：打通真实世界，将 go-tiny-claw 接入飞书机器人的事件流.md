@@ -32,7 +32,7 @@
 
 我们可以用一张示意图来展示这种解耦与飞书交互的消息流转：
 
-![图片](_assets/975185_img_001.png)
+![图片](assets/975185_img_001.png)
 
 通过引入 `Reporter` 接口，输出能力被完全剥离。当在终端运行时，我们注入 `TerminalReporter`；当接入飞书时，我们注入 `FeishuReporter`。这就是驾驭工程的灵活性所在。
 
@@ -433,20 +433,20 @@ func main() {
 
 1. 在飞书开发者后台（open.feishu.cn）创建一个企业自建应用，并添加“机器人”应用能力。
 
-![图片](_assets/975185_img_002.png)  
-![图片](_assets/975185_img_003.png)  
+![图片](assets/975185_img_002.png)  
+![图片](assets/975185_img_003.png)  
 2. 在权限管理中，至少开通接收群聊消息和接收单聊消息的权限。
 
-![图片](_assets/975185_img_004.png)
+![图片](assets/975185_img_004.png)
 
 3. 在凭证与基础信息中获取 `App ID`、`App Secret`，在“事件与回调”的“加密策略”下获取 `Encrypt Key` 和 `Verification Token`。
 
-![图片](_assets/975185_img_005.png)
+![图片](assets/975185_img_005.png)
 
 4. 将 `http://<你的go-tiny-claw主机ip>:48080/webhook/event` 填入飞书的事件配置和回调配置的请求地址中，并添加相关事件：
 
-![图片](_assets/975185_img_006.png)  
-![图片](_assets/975185_img_007.png)
+![图片](assets/975185_img_006.png)  
+![图片](assets/975185_img_007.png)
 
 > 注意：添加事件或回调的请求地址时，你需要启动 `go-tiny-claw`，feishu平台会发消息验证（challenge）你的请求地址的正确性与合法性。`go-tiny-claw` 的启动方式见下面说明。当验证ok，你的 `go-tiny-claw` 会输出类似 `[Info] [AuthByChallenge Success]` 的日志。
 
@@ -474,14 +474,14 @@ go run cmd/claw/main.go
 
 短短几秒后，你会看到飞书对话框的交互消息。机器人会实时给你发送状态推送，就好像你坐在它的身后看它干活一样：
 
-![图片](_assets/975185_img_008.png)  
+![图片](assets/975185_img_008.png)  
 如果你再在飞书中给它发送另外一条消息：
 
 > “帮我用 bash 查一下当前机器的内网 IP 地址是多少？”
 
 `go-tiny-claw` 在收到消息后，会启动一个新Goroutine来处理这条消息，你的飞书机器人窗口也会看到下面这样的输出：
 
-![图片](_assets/975185_img_009.png)
+![图片](assets/975185_img_009.png)
 
 到这里，你的 Agent 正式突破了仅能在终端与你交互的“束缚”，变成了一个随时随地可以通过飞书被指挥的自动化小助手！
 

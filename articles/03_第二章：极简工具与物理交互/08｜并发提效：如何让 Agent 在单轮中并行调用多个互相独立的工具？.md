@@ -61,7 +61,7 @@ for _, toolCall := range actionResp.ToolCalls {
 
 我们可以用一张示意图来对比改造前后的性能差异。
 
-![](_assets/973865_img_001.jpeg)
+![](assets/973865_img_001.jpeg)
 
 通过引入 Goroutine 和 `sync.WaitGroup`，我们将原本 O(N) 的耗时，硬生生降到了 O(Max(N))。这在面对 I/O 密集型操作时，甚至是数量级的性能提升。
 

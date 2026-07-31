@@ -22,7 +22,7 @@
 
 目前业界公认的最权威的Coding Agent AI System 评测集是 **SWE-bench**，它源自普林斯顿大学的研究，通过爬取 12 个流行开源 Python 仓库的 Issue 与 Pull Request，构建了 2294 个真实软件工程任务（截止至发文时）。其评估核心逻辑可以凝练为四个字：**基于测试（Test-Driven Evaluation）**。
 
-![图片](_assets/981494_img_001.png "图SWE-bench评估运作原理来自 https://www.swebench.com/original.html")
+![图片](assets/981494_img_001.png "图SWE-bench评估运作原理来自 https://www.swebench.com/original.html")
 
 每个任务实例中，在未应用 Pull Request 变更的状态下，一组测试用例会失败；而在 Pull Request 合入后，同一组测试用例会通过。这些由失败转为通过（Fail-to-Pass）的测试，就是评估的核心信号。
 
@@ -37,7 +37,7 @@ Agent 提交的不是一段描述，而是一个可以被直接应用的 **git p
 
 我们可以用一张流程图来看看我们即将手写的自动化评估流水线（Evaluation Pipeline）：
 
-![图片](_assets/981494_img_002.png)
+![图片](assets/981494_img_002.png)
 
 通过这套自动化的跑分流水线，当你未来修改了任何引擎底层的提示词或压缩逻辑后，你只需要运行一次 `go run cmd/bench/main.go`。几分钟后，你就能拿到一份客观的数据报告，用数字决定架构的演进方向。
 
