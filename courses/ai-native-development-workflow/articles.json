@@ -1,0 +1,198 @@
+[
+    {
+        "chapter": "开篇词",
+        "title": "开篇词｜AI工作流革命：重新定义软件工程师的每一天",
+        "file": "articles/01｜开篇词 AI工作流革命：重新定义软件工程师的每一天.md",
+        "chapterDir": "开篇词",
+        "order": 0
+    },
+    {
+        "chapter": "第一章：范式与原理",
+        "title": "01｜范式演进：从\"人机协作\"到\"AI原生\"，你的角色变了吗？",
+        "file": "articles/01｜范式演进：从-人机协作-到-AI原生-，你的角色变了吗？.md",
+        "chapterDir": "第一章：范式与原理",
+        "order": 1
+    },
+    {
+        "chapter": "第一章：范式与原理",
+        "title": "02｜核心引擎：AI原生开发第一性原理——规范驱动开发",
+        "file": "articles/02｜核心引擎：AI原生开发第一性原理——规范驱动开发.md",
+        "chapterDir": "第一章：范式与原理",
+        "order": 2
+    },
+    {
+        "chapter": "第一章：范式与原理",
+        "title": "03｜群雄并起：扫描命令行AI Agent生态，我们为何聚焦Claude Code？",
+        "file": "articles/03｜群雄并起：扫描命令行AIAgent生态，我们为何聚焦ClaudeCode？.md",
+        "chapterDir": "第一章：范式与原理",
+        "order": 3
+    },
+    {
+        "chapter": "第二章：基础交互与上下文",
+        "title": "04｜环境搭建：为Claude Code接入国产大模型",
+        "file": "articles/04｜环境搭建：为ClaudeCode接入国产大模型.md",
+        "chapterDir": "第二章：基础交互与上下文",
+        "order": 4
+    },
+    {
+        "chapter": "第二章：基础交互与上下文",
+        "title": "05｜核心交互模型：所有Agent的通用语言——上下文注入与Shell执行",
+        "file": "articles/05｜核心交互模型：所有Agent的通用语言——上下文注入与Shell执行.md",
+        "chapterDir": "第二章：基础交互与上下文",
+        "order": 5
+    },
+    {
+        "chapter": "第二章：基础交互与上下文",
+        "title": "06｜上下文的艺术（上）：详解CLAUDE.md与AGENTS.md",
+        "file": "articles/06｜上下文的艺术（上）：详解CLAUDE.md与AGENTS.md.md",
+        "chapterDir": "第二章：基础交互与上下文",
+        "order": 6
+    },
+    {
+        "chapter": "第二章：基础交互与上下文",
+        "title": "07｜上下文的艺术（下）：用 constitution.md 为AI注入项目“宪法”",
+        "file": "articles/07｜上下文的艺术（下）：用constitution.md为AI注入项目“宪法”.md",
+        "chapterDir": "第二章：基础交互与上下文",
+        "order": 7
+    },
+    {
+        "chapter": "第三章：扩展与安全",
+        "title": "08｜自定义指令：精通Slash Commands，打造你的私人命令集",
+        "file": "articles/08｜自定义指令：精通SlashCommands，打造你的私人命令集.md",
+        "chapterDir": "第三章：扩展与安全",
+        "order": 8
+    },
+    {
+        "chapter": "第三章：扩展与安全",
+        "title": "09｜安全基石（上）：用权限控制与沙箱为AI戴上“安全镣铐”",
+        "file": "articles/09｜安全基石（上）：用权限控制与沙箱为AI戴上“安全镣铐”.md",
+        "chapterDir": "第三章：扩展与安全",
+        "order": 9
+    },
+    {
+        "chapter": "第三章：扩展与安全",
+        "title": "10｜安全基石（下）：Checkpointing，获得让AI“时光倒流”的超能力",
+        "file": "articles/10｜安全基石（下）：Checkpointing，获得让AI“时光倒流”的超能力.md",
+        "chapterDir": "第三章：扩展与安全",
+        "order": 10
+    },
+    {
+        "chapter": "第三章：扩展与安全",
+        "title": "11｜事件驱动：详解Hooks机制，让AI在关键节点自动触发",
+        "file": "articles/11｜事件驱动：详解Hooks机制，让AI在关键节点自动触发.md",
+        "chapterDir": "第三章：扩展与安全",
+        "order": 11
+    },
+    {
+        "chapter": "第三章：扩展与安全",
+        "title": "12｜终极扩展：深入MCP服务器，将AI连接到任何内外部系统",
+        "file": "articles/12｜终极扩展：深入MCP服务器，将AI连接到任何内外部系统.md",
+        "chapterDir": "第三章：扩展与安全",
+        "order": 12
+    },
+    {
+        "chapter": "第四章：智能协作",
+        "title": "13｜智能涌现的基石：精通Agent Skills，为AI植入专家能力",
+        "file": "articles/13｜智能涌现的基石：精通AgentSkills，为AI植入专家能力.md",
+        "chapterDir": "第四章：智能协作",
+        "order": 13
+    },
+    {
+        "chapter": "第四章：智能协作",
+        "title": "14｜智能分身：精通Subagent，为复杂任务创建专家AI",
+        "file": "articles/14｜智能分身：精通Subagent，为复杂任务创建专家AI.md",
+        "chapterDir": "第四章：智能协作",
+        "order": 14
+    },
+    {
+        "chapter": "第四章：智能协作",
+        "title": "15｜编程接口：驾驭Headless模式，将AI能力集成到脚本与CI",
+        "file": "articles/15｜编程接口：驾驭Headless模式，将AI能力集成到脚本与CI.md",
+        "chapterDir": "第四章：智能协作",
+        "order": 15
+    },
+    {
+        "chapter": "第四章：智能协作",
+        "title": "16｜顶层设计：构建你的AI原生开发“驾驶舱”",
+        "file": "articles/16｜顶层设计：构建你的AI原生开发“驾驶舱”.md",
+        "chapterDir": "第四章：智能协作",
+        "order": 16
+    },
+    {
+        "chapter": "第五章：SDD实战串讲",
+        "title": "17｜需求与设计：在框架中演练，从模糊想法到清晰的spec.md",
+        "file": "articles/17｜需求与设计：在框架中演练，从模糊想法到清晰的spec.md.md",
+        "chapterDir": "第五章：SDD实战串讲",
+        "order": 17
+    },
+    {
+        "chapter": "第五章：SDD实战串讲",
+        "title": "18｜计划与任务：将规范“编译”为plan.md与tasks.md",
+        "file": "articles/18｜计划与任务：将规范“编译”为plan.md与tasks.md.md",
+        "chapterDir": "第五章：SDD实战串讲",
+        "order": 18
+    },
+    {
+        "chapter": "第五章：SDD实战串讲",
+        "title": "19｜编码与测试：AI驱动的TDD与框架能力的协同作战",
+        "file": "articles/19｜编码与测试：AI驱动的TDD与框架能力的协同作战.md",
+        "chapterDir": "第五章：SDD实战串讲",
+        "order": 19
+    },
+    {
+        "chapter": "第五章：SDD实战串讲",
+        "title": "20｜协同与审查：调用框架中的/review指令，实现标准化审查",
+        "file": "articles/20｜协同与审查：调用框架中的-review指令，实现标准化审查.md",
+        "chapterDir": "第五章：SDD实战串讲",
+        "order": 20
+    },
+    {
+        "chapter": "第五章：SDD实战串讲",
+        "title": "21｜构建与交付：扩展框架能力，实现自动化构建与CI/CD",
+        "file": "articles/21｜构建与交付：扩展框架能力，实现自动化构建与CI-CD.md",
+        "chapterDir": "第五章：SDD实战串讲",
+        "order": 21
+    },
+    {
+        "chapter": "第五章：SDD实战串讲",
+        "title": "22｜维护与重构：AI赋能的系统“体检”与“外科手术”",
+        "file": "articles/22｜维护与重构：AI赋能的系统“体检”与“外科手术”.md",
+        "chapterDir": "第五章：SDD实战串讲",
+        "order": 22
+    },
+    {
+        "chapter": "前沿技术速递",
+        "title": "前沿技术速递｜Agent Teams：打造你的第一支“虚拟研发团队”",
+        "file": "articles/前沿技术速递｜AgentTeams：打造你的第一支“虚拟研发团队”.md",
+        "chapterDir": "前沿技术速递",
+        "order": 23
+    },
+    {
+        "chapter": "前沿技术速递",
+        "title": "前沿技术速递｜告别“方言”：全面解析 Agent Skills 行业标准与高阶编写心法",
+        "file": "articles/前沿技术速递｜告别“方言”：全面解析AgentSkills行业标准与高阶编写心法.md",
+        "chapterDir": "前沿技术速递",
+        "order": 24
+    },
+    {
+        "chapter": "答疑与结课",
+        "title": "精彩答疑｜建立AI原生世界世界观",
+        "file": "articles/精彩答疑｜建立AI原生世界世界观.md",
+        "chapterDir": "答疑与结课",
+        "order": 25
+    },
+    {
+        "chapter": "答疑与结课",
+        "title": "结束语｜未来已来，欢迎来到人机共生的软件工程新纪元",
+        "file": "articles/结束语｜未来已来，欢迎来到人机共生的软件工程新纪元.md",
+        "chapterDir": "答疑与结课",
+        "order": 26
+    },
+    {
+        "chapter": "答疑与结课",
+        "title": "结课测试｜来赴一场满分之约！",
+        "file": "articles/结课测试｜来赴一场满分之约！.md",
+        "chapterDir": "答疑与结课",
+        "order": 27
+    }
+]

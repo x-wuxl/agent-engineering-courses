@@ -4,11 +4,31 @@
     "title": "从 0 开始构建 Agent Harness",
     "summary": "放下 Framework，像写操作系统一样手写 Agent 的 Main Loop、工具与上下文体系。",
     "author": "Tony Bai",
-    "tags": ["Agent", "Harness", "Go"],
+    "tags": [
+      "Agent",
+      "Harness",
+      "Go"
+    ],
     "order": 1,
     "cover": "",
     "chapterCount": 9,
     "lessonCount": 26,
+    "published": true
+  },
+  {
+    "slug": "ai-native-development-workflow",
+    "title": "AI原生开发工作流实战",
+    "summary": "从规范驱动开发到 Claude Code 扩展、安全与 CI/CD，构建完整的 AI 原生工程工作流。",
+    "author": "Tony Bai",
+    "tags": [
+      "AI Native",
+      "Claude Code",
+      "Workflow"
+    ],
+    "order": 2,
+    "cover": "",
+    "chapterCount": 8,
+    "lessonCount": 28,
     "published": true
   }
 ]
