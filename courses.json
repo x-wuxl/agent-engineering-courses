@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "agent-harness-build",
+    "title": "从 0 开始构建 Agent Harness",
+    "summary": "放下 Framework，像写操作系统一样手写 Agent 的 Main Loop、工具与上下文体系。",
+    "author": "Tony Bai",
+    "tags": ["Agent", "Harness", "Go"],
+    "order": 1,
+    "cover": "",
+    "chapterCount": 9,
+    "lessonCount": 26,
+    "published": true
+  }
+]
