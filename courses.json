@@ -30,5 +30,53 @@
     "chapterCount": 8,
     "lessonCount": 28,
     "published": true
+  },
+  {
+    "slug": "agent-system-design-interview",
+    "title": "AI Agent系统设计面试现场",
+    "summary": "围绕意图识别、规划执行、上下文工程、用户画像、RAG 与评估反馈，系统准备 Agent 系统设计面试。",
+    "author": "Tony Bai",
+    "tags": [
+      "Agent",
+      "系统设计",
+      "面试"
+    ],
+    "order": 3,
+    "cover": "",
+    "chapterCount": 9,
+    "lessonCount": 30,
+    "published": true
+  },
+  {
+    "slug": "agent-harness-scaffolding-practice",
+    "title": "Harness Agent脚手架实战课",
+    "summary": "从 CodeAct、Claude Agent SDK 到 DeepAgents 与 Pimono，实战掌握多套 Agent 脚手架与生产化能力。",
+    "author": "Tony Bai",
+    "tags": [
+      "Agent",
+      "Harness",
+      "实战"
+    ],
+    "order": 4,
+    "cover": "",
+    "chapterCount": 7,
+    "lessonCount": 25,
+    "published": true
+  },
+  {
+    "slug": "fde-business-implementation-practice",
+    "title": "FDE 业务落地实战",
+    "summary": "从客户现场的问题发现、场景选择与 Demo，到生产交付、评估治理、产品化和商业化。",
+    "author": "Tony Bai",
+    "tags": [
+      "FDE",
+      "AI落地",
+      "ToB"
+    ],
+    "order": 5,
+    "cover": "",
+    "chapterCount": 8,
+    "lessonCount": 26,
+    "published": true
   }
 ]

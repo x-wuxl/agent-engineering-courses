@@ -1,0 +1,213 @@
+﻿
+[
+  {
+    "chapter": "开篇词",
+    "title": "开篇词｜百场面试录音复盘，我总结出一套Agent面经",
+    "file": "articles/开篇词｜百场面试录音复盘，我总结出一套Agent面经.md",
+    "chapterDir": "开篇词",
+    "order": 0
+  },
+  {
+    "chapter": "第一章：需求理解与意图识别",
+    "title": "01｜用户输入规范化：为什么你的Agent连“那个”“最划算”都听不懂？",
+    "file": "articles/01｜用户输入规范化：为什么你的Agent连“那个”“最划算”都听不懂？.md",
+    "chapterDir": "第一章：需求理解与意图识别",
+    "order": 1
+  },
+  {
+    "chapter": "第一章：需求理解与意图识别",
+    "title": "02｜三层意图识别机制：别再回答“调大模型判断”了，这才是面试官想听的",
+    "file": "articles/02｜三层意图识别机制：别再回答“调大模型判断”了，这才是面试官想听的.md",
+    "chapterDir": "第一章：需求理解与意图识别",
+    "order": 2
+  },
+  {
+    "chapter": "第一章：需求理解与意图识别",
+    "title": "03｜提高准确率：意图识别的五类问题&解法",
+    "file": "articles/03｜提高准确率：意图识别的五类问题&解法.md",
+    "chapterDir": "第一章：需求理解与意图识别",
+    "order": 3
+  },
+  {
+    "chapter": "第一章：需求理解与意图识别",
+    "title": "04｜意图识别面试攻略：简历和竞争力方案应该这么写",
+    "file": "articles/04｜意图识别面试攻略：简历和竞争力方案应该这么写.md",
+    "chapterDir": "第一章：需求理解与意图识别",
+    "order": 4
+  },
+  {
+    "chapter": "第二章：规划与行动",
+    "title": "05｜Agent的Plan机制：好Plan必备的5要素（G4C）",
+    "file": "articles/05｜Agent的Plan机制：好Plan必备的5要素（G4C）.md",
+    "chapterDir": "第二章：规划与行动",
+    "order": 5
+  },
+  {
+    "chapter": "第二章：规划与行动",
+    "title": "06｜Replan（上）：计划赶不上变化？Agent需要“随机应变”",
+    "file": "articles/06｜Replan（上）：计划赶不上变化？Agent需要“随机应变”.md",
+    "chapterDir": "第二章：规划与行动",
+    "order": 6
+  },
+  {
+    "chapter": "第二章：规划与行动",
+    "title": "07｜Replan（下）：失败点不等于根因点，回溯找对“病根”再下刀",
+    "file": "articles/07｜Replan（下）：失败点不等于根因点，回溯找对“病根”再下刀.md",
+    "chapterDir": "第二章：规划与行动",
+    "order": 7
+  },
+  {
+    "chapter": "第二章：规划与行动",
+    "title": "08-TAO&ReAct：走一步看一步，但是怎么走、怎么看？",
+    "file": "articles/08-TAO&ReAct：走一步看一步，但是怎么走、怎么看？.md",
+    "chapterDir": "第二章：规划与行动",
+    "order": 8
+  },
+  {
+    "chapter": "第二章：规划与行动",
+    "title": "09｜TAO机制：为什么你的Agent总是“选错工具”？",
+    "file": "articles/09｜TAO机制：为什么你的Agent总是“选错工具”？.md",
+    "chapterDir": "第二章：规划与行动",
+    "order": 9
+  },
+  {
+    "chapter": "第二章：规划与行动",
+    "title": "10｜面试场景设计：一个复杂的业务场景，就是面试“主线剧情”",
+    "file": "articles/10｜面试场景设计：一个复杂的业务场景，就是面试“主线剧情”.md",
+    "chapterDir": "第二章：规划与行动",
+    "order": 10
+  },
+  {
+    "chapter": "第三章：上下文工程",
+    "title": "11｜ContextWindow=f(Context)IsAllYouNeed！",
+    "file": "articles/11｜ContextWindow=f(Context)IsAllYouNeed！.md",
+    "chapterDir": "第三章：上下文工程",
+    "order": 11
+  },
+  {
+    "chapter": "第三章：上下文工程",
+    "title": "12｜上下文窗口：怎么设计一个动态编排的Context策略？",
+    "file": "articles/12｜上下文窗口：怎么设计一个动态编排的Context策略？.md",
+    "chapterDir": "第三章：上下文工程",
+    "order": 12
+  },
+  {
+    "chapter": "第三章：上下文工程",
+    "title": "13｜摘要-压缩之后，你怎么把细节找回来？",
+    "file": "articles/13｜摘要-压缩之后，你怎么把细节找回来？.md",
+    "chapterDir": "第三章：上下文工程",
+    "order": 13
+  },
+  {
+    "chapter": "第四章：用户画像与长任务",
+    "title": "14｜用户画像（上）：你的Agent的杀手锏",
+    "file": "articles/14｜用户画像（上）：你的Agent的杀手锏.md",
+    "chapterDir": "第四章：用户画像与长任务",
+    "order": 14
+  },
+  {
+    "chapter": "第四章：用户画像与长任务",
+    "title": "15｜用户画像（下）：用户画像怎么来的，你怎么知道不是一时兴起呢？",
+    "file": "articles/15｜用户画像（下）：用户画像怎么来的，你怎么知道不是一时兴起呢？.md",
+    "chapterDir": "第四章：用户画像与长任务",
+    "order": 15
+  },
+  {
+    "chapter": "第四章：用户画像与长任务",
+    "title": "16｜对话-任务特别长长长……怎么办？",
+    "file": "articles/16｜对话-任务特别长长长……怎么办？.md",
+    "chapterDir": "第四章：用户画像与长任务",
+    "order": 16
+  },
+  {
+    "chapter": "第四章：用户画像与长任务",
+    "title": "17｜如何设计一个面试中富有竞争力的上下文管理机制？",
+    "file": "articles/17｜如何设计一个面试中富有竞争力的上下文管理机制？.md",
+    "chapterDir": "第四章：用户画像与长任务",
+    "order": 17
+  },
+  {
+    "chapter": "第五章：检索增强（RAG）",
+    "title": "18｜别只答RAG：教你设计Agent的信息检索机制",
+    "file": "articles/18｜别只答RAG：教你设计Agent的信息检索机制.md",
+    "chapterDir": "第五章：检索增强（RAG）",
+    "order": 18
+  },
+  {
+    "chapter": "第五章：检索增强（RAG）",
+    "title": "19｜Chunk的召回精度和粒度，你怎么平衡？",
+    "file": "articles/19｜Chunk的召回精度和粒度，你怎么平衡？.md",
+    "chapterDir": "第五章：检索增强（RAG）",
+    "order": 19
+  },
+  {
+    "chapter": "第五章：检索增强（RAG）",
+    "title": "20｜怎么系统性提高Agent检索召回的准确率？",
+    "file": "articles/20｜怎么系统性提高Agent检索召回的准确率？.md",
+    "chapterDir": "第五章：检索增强（RAG）",
+    "order": 20
+  },
+  {
+    "chapter": "第五章：检索增强（RAG）",
+    "title": "21｜Agent检索性能优化：最小充分检索、动态预算与缓存",
+    "file": "articles/21｜Agent检索性能优化：最小充分检索、动态预算与缓存.md",
+    "chapterDir": "第五章：检索增强（RAG）",
+    "order": 21
+  },
+  {
+    "chapter": "第五章：检索增强（RAG）",
+    "title": "22｜如何设计一个有竞争力的检索（RAG）面试方案？",
+    "file": "articles/22｜如何设计一个有竞争力的检索（RAG）面试方案？.md",
+    "chapterDir": "第五章：检索增强（RAG）",
+    "order": 22
+  },
+  {
+    "chapter": "第六章：评估与反馈",
+    "title": "23｜你怎么知道用户喜不喜欢你的Agent？",
+    "file": "articles/23｜你怎么知道用户喜不喜欢你的Agent？.md",
+    "chapterDir": "第六章：评估与反馈",
+    "order": 23
+  },
+  {
+    "chapter": "第六章：评估与反馈",
+    "title": "24｜用户：Agent，你知错了吗，错在哪儿了？",
+    "file": "articles/24｜用户：Agent，你知错了吗，错在哪儿了？.md",
+    "chapterDir": "第六章：评估与反馈",
+    "order": 24
+  },
+  {
+    "chapter": "加餐：面试表达",
+    "title": "加餐-简历篇-如何撰写Agent项目经历？",
+    "file": "articles/加餐-简历篇-如何撰写Agent项目经历？.md",
+    "chapterDir": "加餐：面试表达",
+    "order": 25
+  },
+  {
+    "chapter": "加餐：面试表达",
+    "title": "加餐-面试题｜一张图总结Agent面试要点",
+    "file": "articles/加餐-面试题｜一张图总结Agent面试要点.md",
+    "chapterDir": "加餐：面试表达",
+    "order": 26
+  },
+  {
+    "chapter": "加餐：面试表达",
+    "title": "直播回放｜如何准备Agent面试项目：从调用大模型到完整的Agent工程体系",
+    "file": "articles/直播回放｜如何准备Agent面试项目：从调用大模型到完整的Agent工程体系.md",
+    "chapterDir": "加餐：面试表达",
+    "order": 27
+  },
+  {
+    "chapter": "结语与测试",
+    "title": "结课测试｜来赴一场满分之约！",
+    "file": "articles/结课测试｜来赴一场满分之约！.md",
+    "chapterDir": "结语与测试",
+    "order": 28
+  },
+  {
+    "chapter": "结语与测试",
+    "title": "结束语｜如何设计一个具体领域的Agent？",
+    "file": "articles/结束语｜如何设计一个具体领域的Agent？.md",
+    "chapterDir": "结语与测试",
+    "order": 29
+  }
+]

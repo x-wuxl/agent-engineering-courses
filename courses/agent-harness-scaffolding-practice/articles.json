@@ -1,0 +1,178 @@
+﻿
+[
+  {
+    "chapter": "开篇词",
+    "title": "开篇词｜掌握四套脚手架，让Agent开发回归业务本身",
+    "file": "articles/开篇词｜掌握四套脚手架，让Agent开发回归业务本身.md",
+    "chapterDir": "开篇词",
+    "order": 0
+  },
+  {
+    "chapter": "第一章：CodeAct与多代理基础",
+    "title": "01｜全景：Agent开发的技术演进与课程定位",
+    "file": "articles/01｜全景：Agent开发的技术演进与课程定位.md",
+    "chapterDir": "第一章：CodeAct与多代理基础",
+    "order": 1
+  },
+  {
+    "chapter": "第一章：CodeAct与多代理基础",
+    "title": "02｜起点：从数据分析场景看CodeAct模式",
+    "file": "articles/02｜起点：从数据分析场景看CodeAct模式.md",
+    "chapterDir": "第一章：CodeAct与多代理基础",
+    "order": 2
+  },
+  {
+    "chapter": "第一章：CodeAct与多代理基础",
+    "title": "03｜核心：用Smolagents结合自定义工具完成数据分析报告生成",
+    "file": "articles/03｜核心：用Smolagents结合自定义工具完成数据分析报告生成.md",
+    "chapterDir": "第一章：CodeAct与多代理基础",
+    "order": 3
+  },
+  {
+    "chapter": "第一章：CodeAct与多代理基础",
+    "title": "04｜扩展：通过多Agent协同机制提升分析深度",
+    "file": "articles/04｜扩展：通过多Agent协同机制提升分析深度.md",
+    "chapterDir": "第一章：CodeAct与多代理基础",
+    "order": 4
+  },
+  {
+    "chapter": "第二章：Claude Agent SDK与AgentLoop",
+    "title": "05｜起点：从复杂金融任务看ClaudeAgentSDK",
+    "file": "articles/05｜起点：从复杂金融任务看ClaudeAgentSDK.md",
+    "chapterDir": "第二章：Claude Agent SDK与AgentLoop",
+    "order": 5
+  },
+  {
+    "chapter": "第二章：Claude Agent SDK与AgentLoop",
+    "title": "06｜核心：快速构建AgentLoop并接入研报所需的工具集",
+    "file": "articles/06｜核心：快速构建AgentLoop并接入研报所需的工具集.md",
+    "chapterDir": "第二章：Claude Agent SDK与AgentLoop",
+    "order": 6
+  },
+  {
+    "chapter": "第二章：Claude Agent SDK与AgentLoop",
+    "title": "07-应用：构建替代工作流的Skills完成金融研报的生成",
+    "file": "articles/07-应用：构建替代工作流的Skills完成金融研报的生成.md",
+    "chapterDir": "第二章：Claude Agent SDK与AgentLoop",
+    "order": 7
+  },
+  {
+    "chapter": "第二章：Claude Agent SDK与AgentLoop",
+    "title": "08｜起点：多代理编排设计支持复杂投研场景",
+    "file": "articles/08｜起点：多代理编排设计支持复杂投研场景.md",
+    "chapterDir": "第二章：Claude Agent SDK与AgentLoop",
+    "order": 8
+  },
+  {
+    "chapter": "第二章：Claude Agent SDK与AgentLoop",
+    "title": "09｜进阶：会话Session与Fork分叉管理探索不同投资逻辑",
+    "file": "articles/09｜进阶：会话Session与Fork分叉管理探索不同投资逻辑.md",
+    "chapterDir": "第二章：Claude Agent SDK与AgentLoop",
+    "order": 9
+  },
+  {
+    "chapter": "第二章：Claude Agent SDK与AgentLoop",
+    "title": "10｜扩展：Hooks机制的实战应用",
+    "file": "articles/10｜扩展：Hooks机制的实战应用.md",
+    "chapterDir": "第二章：Claude Agent SDK与AgentLoop",
+    "order": 10
+  },
+  {
+    "chapter": "第二章：Claude Agent SDK与AgentLoop",
+    "title": "11｜扩展：OpenTelemetry全链路监控与成本管理",
+    "file": "articles/11｜扩展：OpenTelemetry全链路监控与成本管理.md",
+    "chapterDir": "第二章：Claude Agent SDK与AgentLoop",
+    "order": 11
+  },
+  {
+    "chapter": "第三章：DeepAgents与知识工程",
+    "title": "12｜起点：Deepagents快速入门与LangChain老项目升级",
+    "file": "articles/12｜起点：Deepagents快速入门与LangChain老项目升级.md",
+    "chapterDir": "第三章：DeepAgents与知识工程",
+    "order": 12
+  },
+  {
+    "chapter": "第三章：DeepAgents与知识工程",
+    "title": "13｜基础：LLM-Wiki快速理解与入门",
+    "file": "articles/13｜基础：LLM-Wiki快速理解与入门.md",
+    "chapterDir": "第三章：DeepAgents与知识工程",
+    "order": 13
+  },
+  {
+    "chapter": "第三章：DeepAgents与知识工程",
+    "title": "14｜应用：基于Deepagents与LLM-Wiki方法论沉淀构建知识库",
+    "file": "articles/14｜应用：基于Deepagents与LLM-Wiki方法论沉淀构建知识库.md",
+    "chapterDir": "第三章：DeepAgents与知识工程",
+    "order": 14
+  },
+  {
+    "chapter": "第四章：Pimono生产实践",
+    "title": "15｜起点：基于pimono打造生产级合同审查AgentRuntime",
+    "file": "articles/15｜起点：基于pimono打造生产级合同审查AgentRuntime.md",
+    "chapterDir": "第四章：Pimono生产实践",
+    "order": 15
+  },
+  {
+    "chapter": "第四章：Pimono生产实践",
+    "title": "16｜基础：统一工具接口与结构化输出实现合同文档解析与分类",
+    "file": "articles/16｜基础：统一工具接口与结构化输出实现合同文档解析与分类.md",
+    "chapterDir": "第四章：Pimono生产实践",
+    "order": 16
+  },
+  {
+    "chapter": "第四章：Pimono生产实践",
+    "title": "17｜进阶：长上下文与Skill调用构建大合同审查流水线",
+    "file": "articles/17｜进阶：长上下文与Skill调用构建大合同审查流水线.md",
+    "chapterDir": "第四章：Pimono生产实践",
+    "order": 17
+  },
+  {
+    "chapter": "第四章：Pimono生产实践",
+    "title": "18｜进阶：拦截管道构建合同敏感信息的多层安全护栏",
+    "file": "articles/18｜进阶：拦截管道构建合同敏感信息的多层安全护栏.md",
+    "chapterDir": "第四章：Pimono生产实践",
+    "order": 18
+  },
+  {
+    "chapter": "第四章：Pimono生产实践",
+    "title": "19｜扩展：ChatPanel助力Agent丝滑接入聊天对话Web页面",
+    "file": "articles/19｜扩展：ChatPanel助力Agent丝滑接入聊天对话Web页面.md",
+    "chapterDir": "第四章：Pimono生产实践",
+    "order": 19
+  },
+  {
+    "chapter": "第四章：Pimono生产实践",
+    "title": "20｜TUI：PimonoTUI自绘引擎与内置组件库实战",
+    "file": "articles/20｜TUI：PimonoTUI自绘引擎与内置组件库实战.md",
+    "chapterDir": "第四章：Pimono生产实践",
+    "order": 20
+  },
+  {
+    "chapter": "加餐：框架与生态",
+    "title": "DeepSeekHarness：插件化Agent框架与生态入门",
+    "file": "articles/DeepSeekHarness：插件化Agent框架与生态入门.md",
+    "chapterDir": "加餐：框架与生态",
+    "order": 21
+  },
+  {
+    "chapter": "加餐：框架与生态",
+    "title": "直播回放：5倍效率提升，用DeepAgents重构Agent开发流",
+    "file": "articles/直播回放：5倍效率提升，用DeepAgents重构Agent开发流.md",
+    "chapterDir": "加餐：框架与生态",
+    "order": 22
+  },
+  {
+    "chapter": "结语与测试",
+    "title": "结课测试｜来赴一场满分之约！",
+    "file": "articles/结课测试｜来赴一场满分之约！.md",
+    "chapterDir": "结语与测试",
+    "order": 23
+  },
+  {
+    "chapter": "结语与测试",
+    "title": "结束语｜行动交给现在，结果交给时间",
+    "file": "articles/结束语｜行动交给现在，结果交给时间.md",
+    "chapterDir": "结语与测试",
+    "order": 24
+  }
+]
