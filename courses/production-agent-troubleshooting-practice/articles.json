@@ -1,0 +1,178 @@
+﻿
+[
+  {
+    "chapter": "开篇词",
+    "title": "开篇词｜Agent跑起来之后，真正的工程才刚开始",
+    "file": "articles/开篇词｜Agent跑起来之后，真正的工程才刚开始.md",
+    "chapterDir": "开篇词",
+    "order": 0
+  },
+  {
+    "chapter": "第一章：可靠性根因与基础防线",
+    "title": "01｜用十倍速制造事故：LoopEngineering的暗面",
+    "file": "articles/01｜用十倍速制造事故：LoopEngineering的暗面.md",
+    "chapterDir": "第一章：可靠性根因与基础防线",
+    "order": 1
+  },
+  {
+    "chapter": "第一章：可靠性根因与基础防线",
+    "title": "02｜别把执行权交给概率：六大契约重新定义工具设计",
+    "file": "articles/02｜别把执行权交给概率：六大契约重新定义工具设计.md",
+    "chapterDir": "第一章：可靠性根因与基础防线",
+    "order": 2
+  },
+  {
+    "chapter": "第一章：可靠性根因与基础防线",
+    "title": "03｜注意力稀释：当113个工具让模型降智时，工程师该怎么做？",
+    "file": "articles/03｜注意力稀释：当113个工具让模型降智时，工程师该怎么做？.md",
+    "chapterDir": "第一章：可靠性根因与基础防线",
+    "order": 3
+  },
+  {
+    "chapter": "第一章：可靠性根因与基础防线",
+    "title": "04｜格式幻觉：为什么JSON完美合规却还能毒杀下游？",
+    "file": "articles/04｜格式幻觉：为什么JSON完美合规却还能毒杀下游？.md",
+    "chapterDir": "第一章：可靠性根因与基础防线",
+    "order": 4
+  },
+  {
+    "chapter": "第一章：可靠性根因与基础防线",
+    "title": "05｜为什么窗口越大，Agent越容易忽略最重要的指令？",
+    "file": "articles/05｜为什么窗口越大，Agent越容易忽略最重要的指令？.md",
+    "chapterDir": "第一章：可靠性根因与基础防线",
+    "order": 5
+  },
+  {
+    "chapter": "第一章：可靠性根因与基础防线",
+    "title": "06｜分路召回架构：如何避免安全红线被向量检索“漏掉”？",
+    "file": "articles/06｜分路召回架构：如何避免安全红线被向量检索“漏掉”？.md",
+    "chapterDir": "第一章：可靠性根因与基础防线",
+    "order": 6
+  },
+  {
+    "chapter": "第二章：多Agent协作与计划可靠性",
+    "title": "07｜当Agent的记忆开始“精神错乱”，敢遗忘才是解药",
+    "file": "articles/07｜当Agent的记忆开始“精神错乱”，敢遗忘才是解药.md",
+    "chapterDir": "第二章：多Agent协作与计划可靠性",
+    "order": 7
+  },
+  {
+    "chapter": "第二章：多Agent协作与计划可靠性",
+    "title": "08｜蒙眼狂奔的ReAct：为什么执行前看不到计划的Agent最危险？",
+    "file": "articles/08｜蒙眼狂奔的ReAct：为什么执行前看不到计划的Agent最危险？.md",
+    "chapterDir": "第二章：多Agent协作与计划可靠性",
+    "order": 8
+  },
+  {
+    "chapter": "第二章：多Agent协作与计划可靠性",
+    "title": "09｜Agent之间的信息传递：从互相投毒到契约交互",
+    "file": "articles/09｜Agent之间的信息传递：从互相投毒到契约交互.md",
+    "chapterDir": "第二章：多Agent协作与计划可靠性",
+    "order": 9
+  },
+  {
+    "chapter": "第二章：多Agent协作与计划可靠性",
+    "title": "10｜多个Agent并发操作同一个世界：隔离优于共享",
+    "file": "articles/10｜多个Agent并发操作同一个世界：隔离优于共享.md",
+    "chapterDir": "第二章：多Agent协作与计划可靠性",
+    "order": 10
+  },
+  {
+    "chapter": "第三章：权限、安全与人工审批",
+    "title": "11｜RBAC挡不住Agent：如何设计一个企业级Agent权限系统",
+    "file": "articles/11｜RBAC挡不住Agent：如何设计一个企业级Agent权限系统.md",
+    "chapterDir": "第三章：权限、安全与人工审批",
+    "order": 11
+  },
+  {
+    "chapter": "第三章：权限、安全与人工审批",
+    "title": "12｜人审批后事故反而更大：正确设计HITL审批系统",
+    "file": "articles/12｜人审批后事故反而更大：正确设计HITL审批系统.md",
+    "chapterDir": "第三章：权限、安全与人工审批",
+    "order": 12
+  },
+  {
+    "chapter": "第三章：权限、安全与人工审批",
+    "title": "13｜Prompt防不住注入：从加防线到零信任体系",
+    "file": "articles/13｜Prompt防不住注入：从加防线到零信任体系.md",
+    "chapterDir": "第三章：权限、安全与人工审批",
+    "order": 13
+  },
+  {
+    "chapter": "第四章：运行稳定性与可观测性",
+    "title": "14｜Agent挂了，如何不丢状态、不丢钱、不丢数据地拉起来？",
+    "file": "articles/14｜Agent挂了，如何不丢状态、不丢钱、不丢数据地拉起来？.md",
+    "chapterDir": "第四章：运行稳定性与可观测性",
+    "order": 14
+  },
+  {
+    "chapter": "第四章：运行稳定性与可观测性",
+    "title": "15｜Agent的成本总是悄悄飙升：创建网格化天眼账本",
+    "file": "articles/15｜Agent的成本总是悄悄飙升：创建网格化天眼账本.md",
+    "chapterDir": "第四章：运行稳定性与可观测性",
+    "order": 15
+  },
+  {
+    "chapter": "第四章：运行稳定性与可观测性",
+    "title": "16｜传统监控对Agent几乎无效：搭建Agent全链路监控体系",
+    "file": "articles/16｜传统监控对Agent几乎无效：搭建Agent全链路监控体系.md",
+    "chapterDir": "第四章：运行稳定性与可观测性",
+    "order": 16
+  },
+  {
+    "chapter": "第四章：运行稳定性与可观测性",
+    "title": "17｜AgentPlan可靠性工程：缩短链路长度比提升单步精度更划算",
+    "file": "articles/17｜AgentPlan可靠性工程：缩短链路长度比提升单步精度更划算.md",
+    "chapterDir": "第四章：运行稳定性与可观测性",
+    "order": 17
+  },
+  {
+    "chapter": "第五章：测试、评估与持续进化",
+    "title": "18｜日志全绿，事故照发：构筑Agent测试护栏",
+    "file": "articles/18｜日志全绿，事故照发：构筑Agent测试护栏.md",
+    "chapterDir": "第五章：测试、评估与持续进化",
+    "order": 18
+  },
+  {
+    "chapter": "第五章：测试、评估与持续进化",
+    "title": "19｜指标涨了，体验崩了：搭建完善的LLM评估体系",
+    "file": "articles/19｜指标涨了，体验崩了：搭建完善的LLM评估体系.md",
+    "chapterDir": "第五章：测试、评估与持续进化",
+    "order": 19
+  },
+  {
+    "chapter": "第五章：测试、评估与持续进化",
+    "title": "20｜别给Prompt当保姆了：构建Agent的自我进化系统",
+    "file": "articles/20｜别给Prompt当保姆了：构建Agent的自我进化系统.md",
+    "chapterDir": "第五章：测试、评估与持续进化",
+    "order": 20
+  },
+  {
+    "chapter": "加餐：思考题答案",
+    "title": "专栏思考题参考答案",
+    "file": "articles/专栏思考题参考答案.md",
+    "chapterDir": "加餐：思考题答案",
+    "order": 21
+  },
+  {
+    "chapter": "加餐：思考题答案",
+    "title": "思考题参考答案（11课-20课）",
+    "file": "articles/思考题参考答案（11课-20课）.md",
+    "chapterDir": "加餐：思考题答案",
+    "order": 22
+  },
+  {
+    "chapter": "结语与测试",
+    "title": "结课测试｜来赴一场满分之约！",
+    "file": "articles/结课测试｜来赴一场满分之约！.md",
+    "chapterDir": "结语与测试",
+    "order": 23
+  },
+  {
+    "chapter": "结语与测试",
+    "title": "结束语｜代码不会骗人：在试错中长出Agent直觉",
+    "file": "articles/结束语｜代码不会骗人：在试错中长出Agent直觉.md",
+    "chapterDir": "结语与测试",
+    "order": 24
+  }
+]

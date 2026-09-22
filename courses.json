@@ -10,7 +10,7 @@
       "Go"
     ],
     "order": 1,
-    "cover": "",
+    "cover": "courses/agent-harness-build/cover.webp",
     "chapterCount": 9,
     "lessonCount": 26,
     "published": true
@@ -77,6 +77,22 @@
     "cover": "",
     "chapterCount": 8,
     "lessonCount": 26,
+    "published": true
+  },
+  {
+    "slug": "production-agent-troubleshooting-practice",
+    "title": "生产级 Agent 排雷实战",
+    "summary": "从工具契约、上下文与检索，到多 Agent 协作、权限安全、可观测性、评估和自我进化，系统排查生产级 Agent 的可靠性问题。",
+    "author": "Tony Bai",
+    "tags": [
+      "Agent",
+      "生产实践",
+      "可靠性"
+    ],
+    "order": 6,
+    "cover": "",
+    "chapterCount": 8,
+    "lessonCount": 25,
     "published": true
   }
 ]
