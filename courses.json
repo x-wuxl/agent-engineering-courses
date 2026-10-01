@@ -35,7 +35,7 @@
     "slug": "agent-system-design-interview",
     "title": "AI Agent系统设计面试现场",
     "summary": "围绕意图识别、规划执行、上下文工程、用户画像、RAG 与评估反馈，系统准备 Agent 系统设计面试。",
-    "author": "Tony Bai",
+    "author": "大明",
     "tags": [
       "Agent",
       "系统设计",
@@ -51,7 +51,7 @@
     "slug": "agent-harness-scaffolding-practice",
     "title": "Harness Agent脚手架实战课",
     "summary": "从 CodeAct、Claude Agent SDK 到 DeepAgents 与 Pimono，实战掌握多套 Agent 脚手架与生产化能力。",
-    "author": "Tony Bai",
+    "author": "邢云阳",
     "tags": [
       "Agent",
       "Harness",
@@ -67,7 +67,7 @@
     "slug": "fde-business-implementation-practice",
     "title": "FDE 业务落地实战",
     "summary": "从客户现场的问题发现、场景选择与 Demo，到生产交付、评估治理、产品化和商业化。",
-    "author": "Tony Bai",
+    "author": "曹犟",
     "tags": [
       "FDE",
       "AI落地",
@@ -83,7 +83,7 @@
     "slug": "production-agent-troubleshooting-practice",
     "title": "生产级 Agent 排雷实战",
     "summary": "从工具契约、上下文与检索，到多 Agent 协作、权限安全、可观测性、评估和自我进化，系统排查生产级 Agent 的可靠性问题。",
-    "author": "Tony Bai",
+    "author": "李号双",
     "tags": [
       "Agent",
       "生产实践",
@@ -93,6 +93,38 @@
     "cover": "",
     "chapterCount": 8,
     "lessonCount": 25,
+    "published": true
+  },
+  {
+    "slug": "java-agent-demo-to-production",
+    "title": "Java Agent：从 Demo 到生产级实践",
+    "summary": "从 Spring Boot 与 Embabel 入门，到强类型建模、目标导向规划、MCP、RAG、安全、测试、集成和可观测性，构建企业级 Java Agent。",
+    "author": "张嘉熙",
+    "tags": [
+      "Java",
+      "Agent",
+      "生产实践"
+    ],
+    "order": 7,
+    "cover": "",
+    "chapterCount": 6,
+    "lessonCount": 18,
+    "published": true
+  },
+  {
+    "slug": "ai-quantitative-thinking-for-everyone",
+    "title": "人人都用得上的 AI 量化思维课",
+    "summary": "从投资大师与市场规则，到技术分析、经典策略、AI 研报、风险陷阱和量化进阶，建立人人都能用的量化思维。",
+    "author": "陈旸",
+    "tags": [
+      "AI",
+      "量化",
+      "投资思维"
+    ],
+    "order": 8,
+    "cover": "",
+    "chapterCount": 9,
+    "lessonCount": 32,
     "published": true
   }
 ]

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>课程阅读器</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+<link rel="stylesheet" href="../../assets/css/tokens.css">
+<link rel="stylesheet" href="../../assets/css/reader.css">
+</head>
+<body class="reader-app">
+
+<div class="header">
+  <button class="menu-btn" onclick="toggleSidebar()" aria-label="打开目录">☰</button>
+  <h1 id="course-title">课程</h1>
+  <a class="back-link" href="../../">← 返回课程列表</a>
+</div>
+
+<div class="container">
+  <nav class="sidebar" id="sidebar">
+    <div id="sidebar-list"></div>
+  </nav>
+  <main class="main" id="main-content">
+    <div class="landing" id="landing">
+      <h2 id="landing-title">课程</h2>
+      <p>选择左侧文章开始阅读</p>
+    </div>
+    <div id="article-container"></div>
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script>
+marked.setOptions({
+  breaks: true,
+  gfm: true,
+  highlight: function(code, lang) {
+    if (lang && hljs.getLanguage(lang)) {
+      try { return hljs.highlight(code, { language: lang }).value; } catch (e) {}
+    }
+    return code;
+  }
+});
+</script>
+<script src="../../assets/js/reader.js"></script>
+</body>
+</html>

@@ -52,8 +52,8 @@
 
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
 }
 
 .course-card {
@@ -75,34 +75,100 @@
   box-shadow: var(--shadow-card);
 }
 
-.course-cover {
-  aspect-ratio: 16 / 8;
-  background:
-    linear-gradient(135deg, rgba(124, 111, 240, 0.85), rgba(80, 216, 144, 0.75)),
-    var(--bg-hover);
-  display: flex;
-  align-items: flex-end;
-  padding: 18px;
+.course-visual {
+  min-height: 112px;
+  position: relative;
+  overflow: hidden;
 }
 
-.course-cover img {
+.course-visual--empty {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 22px;
+  color: #fff;
+}
+
+.course-visual--empty::after {
+  content: '';
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: -42px;
+  top: -74px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 18px rgba(255, 255, 255, 0.06),
+    0 0 0 36px rgba(255, 255, 255, 0.04);
+}
+
+.course-tone-1 {
+  background: linear-gradient(135deg, #6057c9, #8d7cf0);
+}
+
+.course-tone-2 {
+  background: linear-gradient(135deg, #196b76, #43bda6);
+}
+
+.course-tone-3 {
+  background: linear-gradient(135deg, #8d4d78, #d27da3);
+}
+
+.course-tone-4 {
+  background: linear-gradient(135deg, #a45b37, #e0a34f);
+}
+
+.course-tone-5 {
+  background: linear-gradient(135deg, #3d649d, #6d9fda);
+}
+
+.course-tone-6 {
+  background: linear-gradient(135deg, #3c765d, #86bd72);
+}
+
+.course-number {
+  position: relative;
+  z-index: 1;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.06em;
+}
+
+.course-label {
+  position: relative;
+  z-index: 1;
+  align-self: flex-end;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.76;
+}
+
+.course-visual--image {
+  aspect-ratio: 16 / 6;
+  background: var(--bg-hover);
+}
+
+.course-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.course-cover .cover-title {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
+/* Keep the visual header compact when a real cover is supplied. */
+.course-visual--image {
+  display: flex;
 }
 
 .course-body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 18px;
+  padding: 20px 22px 22px;
   flex: 1;
 }
 

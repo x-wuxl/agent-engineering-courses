@@ -37,9 +37,15 @@
       const summary = escapeHtml(course.summary || '');
       const author = escapeHtml(course.author || '');
       const tags = renderTags(course.tags);
+      const order = Number(course.order || 0);
+      const courseNumber = order > 0 ? String(order).padStart(2, '0') : '—';
+      const tone = order > 0 ? ((order - 1) % 6) + 1 : 1;
       const cover = course.cover
-        ? `<img src="${escapeHtml(course.cover)}" alt="${title}">`
-        : `<div class="cover-title">${title}</div>`;
+        ? `<div class="course-visual course-visual--image"><img src="${escapeHtml(course.cover)}" alt=""></div>`
+        : `<div class="course-visual course-visual--empty course-tone-${tone}">
+            <span class="course-number">${courseNumber}</span>
+            <span class="course-label">AI Agent 工程课</span>
+          </div>`;
       const chapterText = Number(course.chapterCount)
         ? `<span>${Number(course.chapterCount)} 章</span>`
         : '';
@@ -48,7 +54,7 @@
         : '';
 
       return `<a class="course-card" href="courses/${slug}/">
-        <div class="course-cover">${cover}</div>
+        ${cover}
         <div class="course-body">
           <div class="course-title">${title}</div>
           <div class="course-summary">${summary}</div>

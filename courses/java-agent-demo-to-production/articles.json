@@ -1,0 +1,129 @@
+﻿
+[
+  {
+    "chapter": "开篇词",
+    "title": "开篇词｜从“跑得通”到“敢上线”：Java开发者如何打赢AIAgent工程之战",
+    "file": "articles/开篇词｜从“跑得通”到“敢上线”：Java开发者如何打赢AIAgent工程之战.md",
+    "chapterDir": "开篇词",
+    "order": 0
+  },
+  {
+    "chapter": "第一章：Java Agent基础与生态",
+    "title": "01｜基于SpringBootStarter，快速实现“天气查询Agent”",
+    "file": "articles/01｜基于SpringBootStarter，快速实现“天气查询Agent”.md",
+    "chapterDir": "第一章：Java Agent基础与生态",
+    "order": 1
+  },
+  {
+    "chapter": "第一章：Java Agent基础与生态",
+    "title": "02｜PythonvsJVM生态：为什么80%的Agent项目最终会回到Java？",
+    "file": "articles/02｜PythonvsJVM生态：为什么80%的Agent项目最终会回到Java？.md",
+    "chapterDir": "第一章：Java Agent基础与生态",
+    "order": 2
+  },
+  {
+    "chapter": "第一章：Java Agent基础与生态",
+    "title": "03｜Embabel核心模型：从OODA到Actions、Conditions、Goals",
+    "file": "articles/03｜Embabel核心模型：从OODA到Actions、Conditions、Goals.md",
+    "chapterDir": "第一章：Java Agent基础与生态",
+    "order": 3
+  },
+  {
+    "chapter": "第一章：Java Agent基础与生态",
+    "title": "04｜Spring生态整合：站在Spring、SpringAI肩膀上",
+    "file": "articles/04｜Spring生态整合：站在Spring、SpringAI肩膀上.md",
+    "chapterDir": "第一章：Java Agent基础与生态",
+    "order": 4
+  },
+  {
+    "chapter": "第一章：Java Agent基础与生态",
+    "title": "05｜Java的绝招：强类型领域建模是复杂业务的关键",
+    "file": "articles/05｜Java的绝招：强类型领域建模是复杂业务的关键.md",
+    "chapterDir": "第一章：Java Agent基础与生态",
+    "order": 5
+  },
+  {
+    "chapter": "第二章：规划、工具与知识",
+    "title": "06｜GOAPvsReAct：为什么复杂业务需要目标导向规划？",
+    "file": "articles/06｜GOAPvsReAct：为什么复杂业务需要目标导向规划？.md",
+    "chapterDir": "第二章：规划、工具与知识",
+    "order": 6
+  },
+  {
+    "chapter": "第二章：规划、工具与知识",
+    "title": "07｜@Tool遇上MCP：标准化工具接口设计",
+    "file": "articles/07｜@Tool遇上MCP：标准化工具接口设计.md",
+    "chapterDir": "第二章：规划、工具与知识",
+    "order": 7
+  },
+  {
+    "chapter": "第二章：规划、工具与知识",
+    "title": "08｜Embabel与RAG集成：让Agent真正“读懂”你的私有知识",
+    "file": "articles/08｜Embabel与RAG集成：让Agent真正“读懂”你的私有知识.md",
+    "chapterDir": "第二章：规划、工具与知识",
+    "order": 8
+  },
+  {
+    "chapter": "第二章：规划、工具与知识",
+    "title": "09｜其他规划策略：UtilityAI和Supervisor",
+    "file": "articles/09｜其他规划策略：UtilityAI和Supervisor.md",
+    "chapterDir": "第二章：规划、工具与知识",
+    "order": 9
+  },
+  {
+    "chapter": "第三章：企业级工程实践",
+    "title": "10｜月省70%成本：企业级Agent的模型路由与缓存设计",
+    "file": "articles/10｜月省70%成本：企业级Agent的模型路由与缓存设计.md",
+    "chapterDir": "第三章：企业级工程实践",
+    "order": 10
+  },
+  {
+    "chapter": "第三章：企业级工程实践",
+    "title": "11｜不出事故的Agent：三层安全护栏设计防注入，防越权，防失控",
+    "file": "articles/11｜不出事故的Agent：三层安全护栏设计防注入，防越权，防失控.md",
+    "chapterDir": "第三章：企业级工程实践",
+    "order": 11
+  },
+  {
+    "chapter": "第三章：企业级工程实践",
+    "title": "12｜测试策略：单元、集成、E2E三层测试体系保证质量",
+    "file": "articles/12｜测试策略：单元、集成、E2E三层测试体系保证质量.md",
+    "chapterDir": "第三章：企业级工程实践",
+    "order": 12
+  },
+  {
+    "chapter": "第三章：企业级工程实践",
+    "title": "13｜系统集成：Agent能力与现有系统无缝对接",
+    "file": "articles/13｜系统集成：Agent能力与现有系统无缝对接.md",
+    "chapterDir": "第三章：企业级工程实践",
+    "order": 13
+  },
+  {
+    "chapter": "第三章：企业级工程实践",
+    "title": "14｜Agent可观测性：打开黑盒，日志、追踪、性能剖析",
+    "file": "articles/14｜Agent可观测性：打开黑盒，日志、追踪、性能剖析.md",
+    "chapterDir": "第三章：企业级工程实践",
+    "order": 14
+  },
+  {
+    "chapter": "第四章：综合实战",
+    "title": "15｜从0到1：构建一个企业级智能保险Agent平台",
+    "file": "articles/15｜从0到1：构建一个企业级智能保险Agent平台.md",
+    "chapterDir": "第四章：综合实战",
+    "order": 15
+  },
+  {
+    "chapter": "结语与测试",
+    "title": "结课测试｜来赴一场满分之约！",
+    "file": "articles/结课测试｜来赴一场满分之约！.md",
+    "chapterDir": "结语与测试",
+    "order": 16
+  },
+  {
+    "chapter": "结语与测试",
+    "title": "结束语｜课程结束，工程开始",
+    "file": "articles/结束语｜课程结束，工程开始.md",
+    "chapterDir": "结语与测试",
+    "order": 17
+  }
+]
