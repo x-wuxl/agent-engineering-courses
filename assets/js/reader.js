@@ -120,6 +120,10 @@
     }
   }
 
+  function encodeArticlePath(path) {
+    return path.split('/').map(encodeURIComponent).join('/');
+  }
+
   function fixImageSrcs(container, baseDir) {
     container.querySelectorAll('img').forEach((img) => {
       const src = img.getAttribute('src') || '';
@@ -130,7 +134,7 @@
         !src.startsWith('#') &&
         !src.startsWith('data:')
       ) {
-        img.src = encodeURI(baseDir + src);
+        img.src = encodeArticlePath(baseDir + src);
       }
     });
   }
@@ -148,7 +152,7 @@
     container.innerHTML =
       '<p style="text-align:center;padding:60px;color:var(--text-secondary)">加载中...</p>';
 
-    fetch(file)
+    fetch(encodeArticlePath(file))
       .then((response) => {
         if (!response.ok) {
           throw new Error('article load failed');
