@@ -95,7 +95,10 @@
         articles = data;
         renderSidebar();
         if (window.location.hash) {
-          openArticle(decodeURIComponent(window.location.hash.slice(1)));
+          const file = decodeArticleHash(window.location.hash.slice(1));
+          if (file) {
+            openArticle(file);
+          }
         }
       })
       .catch(() => {
@@ -107,6 +110,14 @@
   function resolveArticleDir(file) {
     const slash = file.lastIndexOf('/');
     return slash >= 0 ? file.slice(0, slash + 1) : '';
+  }
+
+  function decodeArticleHash(hash) {
+    try {
+      return decodeURIComponent(hash);
+    } catch (error) {
+      return '';
+    }
   }
 
   function fixImageSrcs(container, baseDir) {
@@ -125,20 +136,19 @@
   }
 
   function openArticle(file) {
-    const decoded = decodeURIComponent(file);
-    const baseDir = resolveArticleDir(decoded);
+    const baseDir = resolveArticleDir(file);
     $('#sidebar').classList.remove('open');
     $('#landing').style.display = 'none';
 
     document.querySelectorAll('.sidebar-item').forEach((el) => {
-      el.classList.toggle('active', el.dataset.file === decoded);
+      el.classList.toggle('active', el.dataset.file === file);
     });
 
     const container = $('#article-container');
     container.innerHTML =
       '<p style="text-align:center;padding:60px;color:var(--text-secondary)">加载中...</p>';
 
-    fetch(decoded)
+    fetch(file)
       .then((response) => {
         if (!response.ok) {
           throw new Error('article load failed');
@@ -163,7 +173,10 @@
   window.toggleSidebar = toggleSidebar;
   window.addEventListener('hashchange', () => {
     if (window.location.hash) {
-      openArticle(decodeURIComponent(window.location.hash.slice(1)));
+      const file = decodeArticleHash(window.location.hash.slice(1));
+      if (file) {
+        openArticle(file);
+      }
     }
   });
 
